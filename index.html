@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music player</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+        <!-- link fontawesome  -->
+        <script src="https://kit.fontawesome.com/a60d8d237e.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/png" href="music.png" />
+    </head>
+    <body>
+        <header>MINHCT</header>
+        <div class="player">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <!-- Header -->
+                <header>
+                    <h4>Now playing:</h4>
+                    <h2>String 57th & 9th</h2>
+                    <i>©2022 MINHCT</i>
+                </header>
+
+                <!-- CD -->
+                <div class="cd">
+                    <div
+                        class="cd-thumb"
+                        style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')"
+                    ></div>
+                </div>
+
+                <!-- Control -->
+                <div class="control">
+                    <div class="btn btn-repeat">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fa-solid fa-pause icon-pause"></i>
+                        <i class="fa-solid fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+
+                <input id="progress" class="progress" type="range" value="0" min="0" max="100" />
+                <div class="volume-setting">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input class="volume-progress" type="range" id="vol" name="vol" min="0" max="100" value="50" />
+                </div>
+                <audio id="audio" src=""></audio>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist"></div>
+        </div>
+        <script src="./script.js"></script>
+
+        <!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
+    </body>
+</html>
